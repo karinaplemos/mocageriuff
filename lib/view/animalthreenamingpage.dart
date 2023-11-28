@@ -65,7 +65,7 @@ class AnimalThreeNamingPageState extends State<AnimalThreeNamingPage> {
       appBar: AppBar(
         backgroundColor: const Color(0xFF0097b2),
         toolbarHeight: 65,
-        title: const Center(child: Text('Nomeação')),
+        title: const Center(child: Text('Nomeação', style: TextStyle(color: Colors.white))),
         actions: const [NewStopWatch()],
         automaticallyImplyLeading: false,
       ),

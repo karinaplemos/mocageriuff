@@ -28,9 +28,9 @@ class NewStopWatchState extends State<NewStopWatch> {
       padding: const EdgeInsets.all(20.0),
       child: Row(
         children: <Widget>[
-          const Icon(Icons.timer),
+          const Icon(Icons.timer, color: Colors.white),
           const SizedBox(width: 10),
-          Text(elapsedTime, style: const TextStyle(fontSize: 20.0)),
+          Text(elapsedTime, style: const TextStyle(fontSize: 20.0, color: Colors.white)),
         ],
       ),
     );

@@ -64,7 +64,7 @@ class DrawingCubePage extends HookWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF0097b2),
         toolbarHeight: 65,
-        title: const Center(child: Text('Visuoespacial/Executiva')),
+        title: const Center(child: Text('Visuoespacial/Executiva', style: TextStyle(color: Colors.white))),
         actions: [stopWatch],
         automaticallyImplyLeading: false,
       ),
@@ -146,7 +146,7 @@ class DrawingCubePage extends HookWidget {
                         width: 170,
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor:
+                            backgroundColor:  
                             MaterialStateProperty.all(const Color(0xFF0097b2)),
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(
@@ -195,6 +195,7 @@ class DrawingCubePage extends HookWidget {
                               SizedBox(width: 5),
                               Icon(
                                 Icons.save,
+                                color: Colors.white,
                                 size: 20.0,
                               ),
                             ],
@@ -260,6 +261,7 @@ class DrawingCubePage extends HookWidget {
                                 SizedBox(width: 5),
                                 Icon(
                                   Icons.arrow_forward_ios,
+                                  color: Colors.white,
                                   size: 20.0,
                                 ),
                               ],
