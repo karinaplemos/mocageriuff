@@ -63,6 +63,7 @@ class AnimalThreeNamingPageState extends State<AnimalThreeNamingPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: const Color(0xFF0097b2),
         toolbarHeight: 65,
         title: const Center(child: Text('Nomeação')),
         actions: const [NewStopWatch()],
@@ -116,6 +117,8 @@ class AnimalThreeNamingPageState extends State<AnimalThreeNamingPage> {
                     width: 170,
                     child: ElevatedButton(
                       style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(const Color(0xFF0097b2)),
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(

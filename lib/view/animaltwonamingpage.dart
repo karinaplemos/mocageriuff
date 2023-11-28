@@ -61,6 +61,7 @@ class AnimalTwoNamingPageState extends State<AnimalTwoNamingPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: const Color(0xFF0097b2),
         toolbarHeight: 65,
         title: const Center(child: Text('Nomeação')),
         actions: const [NewStopWatch()],
@@ -108,6 +109,8 @@ class AnimalTwoNamingPageState extends State<AnimalTwoNamingPage> {
                   width: 170,
                   child: ElevatedButton(
                     style: ButtonStyle(
+                      backgroundColor:
+                      MaterialStateProperty.all(const Color(0xFF0097b2)),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),

@@ -63,6 +63,7 @@ class DrawingPointsPage extends HookWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: const Color(0xFF0097b2),
         toolbarHeight: 65,
         title: const Center(child: Text('Visuoespacial/Executiva')),
         actions: [stopWatch],
@@ -128,7 +129,7 @@ class DrawingPointsPage extends HookWidget {
                     iconData: FontAwesomeIcons.pencil,
                     selected: drawingMode.value == DrawingMode.pencil,
                     onTap: () => drawingMode.value = DrawingMode.pencil,
-                    tooltip: 'Pencil',
+                    tooltip: 'Lápis',
                   ),
                   const Padding(
                     padding: EdgeInsets.only(left: 40),
@@ -137,7 +138,7 @@ class DrawingPointsPage extends HookWidget {
                     iconData: FontAwesomeIcons.eraser,
                     selected: drawingMode.value == DrawingMode.eraser,
                     onTap: () => drawingMode.value = DrawingMode.eraser,
-                    tooltip: 'Eraser',
+                    tooltip: 'Borracha',
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 40),
@@ -146,6 +147,8 @@ class DrawingPointsPage extends HookWidget {
                       width: 170,
                       child: ElevatedButton(
                         style: ButtonStyle(
+                          backgroundColor:
+                            MaterialStateProperty.all(const Color(0xFF0097b2)),
                           shape:
                               MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
@@ -208,6 +211,8 @@ class DrawingPointsPage extends HookWidget {
                         width: 170,
                         child: ElevatedButton(
                           style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all(const Color(0xFF0097b2)),
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(
                               RoundedRectangleBorder(
