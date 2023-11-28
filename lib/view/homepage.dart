@@ -30,7 +30,10 @@ class HomePageState extends State<HomePage> {
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
-                        ))),
+                        )),
+                        backgroundColor:
+                            MaterialStateProperty.all(const Color(0xFF0097b2)),
+                        ),
                         onPressed: () {
                           Navigator.push(
                             context,
